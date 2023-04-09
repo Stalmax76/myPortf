@@ -1,0 +1,91 @@
+//@use "sass: math";
+
+//підключення міксинів
+//@import "base/mixins";
+@import "base/variables.scss";
+@import "base/mixins.scss";
+
+// обнулення
+@import "_nullStyle";
+@import "_normalize";
+
+//  підключення додаткових модулів
+//@import "fonts/icons.scss";
+@import "_header";
+@import "_main";
+@import "_common.scss";
+
+// підключення шрифтів для використання &display=swap - при підключенні через плагін
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif:regular,700,&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Train+One:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:regular&display=swap");
+
+// =======================================================================================
+// підключення локальних шрифтів
+//@import "fonts/fonts";
+
+// підключення іконочного шрифту
+@import "fonts/icons.scss";
+
+//================== настройки шаблону
+
+// стилі тега BODY =========================================================
+
+html,
+body {
+   font-family: $fontFamily;
+   background-color: #ffffff;
+   font-weight: 400;
+   @include adaptive-font(14, 11);
+
+   // скролл заблокований
+   ._lock {
+      overflow: hidden;
+      // touch-action: none;
+      //overscroll-behavior: none;
+   }
+   // сайт загружений
+   // .loaded & {
+
+   // }
+}
+
+// оболочка wrapper
+.wrapper {
+   //background-color: rgb(238, 172, 172);
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   width: 100%;
+   margin: 0 auto;
+}
+
+//========================== настройки для контейнера ===============
+[class*="__container"] {
+   padding: 0px 15px;
+   max-width: 1570px;
+   margin: 0 auto;
+}
+
+// ======================================== blocks ===============================================
+header {
+   flex: 0 1 auto;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 10;
+   //background-color: $whiteColor;
+   min-height: 230px;
+}
+.main {
+   flex: 1 1 auto; // прижимаєм footer
+   box-sizing: border-box;
+   //background-color: $disableGray;
+}
+
+footer {
+   flex: 0 0 auto;
+   //background-color: $lightGray;
+}

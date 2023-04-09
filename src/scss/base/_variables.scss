@@ -1,0 +1,42 @@
+// шрифт основний, записаний у змінну
+$fontFamily: "Noto Sans";
+$fontMainTitle: "Train One";
+$titleFontFamily: "Noto Serif";
+$mainFontSize: rem(1); //розмір шрифта за замoвчуванням
+
+// ширина полотна
+$maxWidth: 1920;
+
+// мінімільний розмір сторінки
+$minWidth: 320;
+
+// ширина обмежуючого контейнера
+$maxWidthContainer: 1540;
+
+// загальний відступ у контейнера
+// (30 = по 15px зліва та зправа, 0 = немає відступа)
+$containerPadding: 30;
+// ширина спрацювання першого брейкпщінта
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// брейк-поінти
+$pc: em($containerWidth); //ПК, ноутбук, деякі планшети в горизонтальному положенні
+$tablet: em(991.98); //Планшети, деякі телефони в горизонтальному положенні
+$mobile: em(767.98); //телефони L
+$mobileSmall: em(479.98); //телефони S
+
+// тип адаптива:
+//  1 = відзивчива (у контейнера немає брейкпоінтів),
+//  2 = по брейк-поінтам (контейнер міняє свою ширину по брейк-поінтам)
+$responsiveType: 2;
+
+//  основні кольори для використання
+$blackColor: #000000;
+$whiteColor: #ffffff;
+
+//Primary color
+$primaryColor_default: #2988ca;
+
+
+//Gray color
+
