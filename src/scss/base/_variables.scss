@@ -1,7 +1,5 @@
 // шрифт основний, записаний у змінну
-$fontFamily: "Noto Sans";
-$fontMainTitle: "Train One";
-$titleFontFamily: "Noto Serif";
+$fontFamily: "Poppins", sans-serif;
 $mainFontSize: rem(1); //розмір шрифта за замoвчуванням
 
 // ширина полотна
@@ -11,7 +9,7 @@ $maxWidth: 1920;
 $minWidth: 320;
 
 // ширина обмежуючого контейнера
-$maxWidthContainer: 1540;
+$maxWidthContainer: 1140;
 
 // загальний відступ у контейнера
 // (30 = по 15px зліва та зправа, 0 = немає відступа)
@@ -37,6 +35,4 @@ $whiteColor: #ffffff;
 //Primary color
 $primaryColor_default: #2988ca;
 
-
 //Gray color
-
