@@ -1,5 +1,6 @@
 // шрифт основний, записаний у змінну
 $fontFamily: "Poppins", sans-serif;
+$fontFamilyLogo: "BonVivant", sans-serife;
 $mainFontSize: rem(1); //розмір шрифта за замoвчуванням
 
 // ширина полотна
@@ -9,7 +10,7 @@ $maxWidth: 1920;
 $minWidth: 320;
 
 // ширина обмежуючого контейнера
-$maxWidthContainer: 1140;
+$maxWidthContainer: 1140px;
 
 // загальний відступ у контейнера
 // (30 = по 15px зліва та зправа, 0 = немає відступа)
@@ -31,8 +32,15 @@ $responsiveType: 2;
 //  основні кольори для використання
 $blackColor: #000000;
 $whiteColor: #ffffff;
+$titleColor: #8a9ac4;
+$redColor: #f80844;
+$titleColor1: #2a3041;
+$mainColor: rgb(23, 128, 162);
+$mainColor_1: rgb(54, 119, 143);
+$mainColor_2: rgb(85, 110, 125);
+$mainColor_3: rgb(116, 101, 107);
 
 //Primary color
-$primaryColor_default: #2988ca;
+$primaryColor_default: $mainColor;
 
 //Gray color

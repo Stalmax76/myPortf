@@ -5,3 +5,52 @@
 // leter-spacing: = (привязуєм до шрифту - використовуємо  em(7.5, 12);
 
 //===================================================================================
+// ======= title-block ================
+.title__block {
+   position: relative;
+}
+.block-title {
+   text-align: center;
+   position: relative;
+}
+.block-title__sub-title {
+   margin-bottom: 6px;
+}
+.sub-title {
+   position: relative;
+   z-index: 1;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.5; /* 24/16 */
+}
+.sub-title::before {
+   content: "";
+   position: absolute;
+   width: 36px;
+   height: 36px;
+   top: -5px;
+   left: 48%;
+   margin: 0 auto;
+   background-color: $redColor;
+   border-radius: 50%;
+   z-index: -1;
+   box-sizing: content-box;
+}
+.block-title__title {
+   margin-bottom: 25px;
+}
+.title {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.66; /* 60/36 */
+   color: $blackColor;
+}
+.block-title__line {
+}
+.block-title__line span {
+   height: 3px;
+   width: 60px;
+   background-color: $mainColor;
+   display: block;
+   margin: 0 auto;
+}

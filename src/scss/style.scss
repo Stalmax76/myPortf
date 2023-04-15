@@ -20,7 +20,7 @@
 
 // =======================================================================================
 // підключення локальних шрифтів
-//@import "fonts/fonts";
+@import "_fonts.scss";
 
 // підключення іконочного шрифту
 @import "fonts/icons.scss";
@@ -34,6 +34,7 @@ body {
    font-family: $fontFamily;
    background-color: #ffffff;
    font-weight: 400;
+   color: $blackColor;
    @include adaptive-font(14, 11);
 
    // скролл заблокований
@@ -62,28 +63,24 @@ body {
 //========================== настройки для контейнера ===============
 [class*="__container"] {
    padding: 0px 15px;
-   max-width: 1570px;
+   max-width: $maxWidthContainer;
    margin: 0 auto;
 }
 
 // ======================================== blocks ===============================================
 header {
    flex: 0 1 auto;
-   position: fixed;
-   top: 0;
-   left: 0;
    width: 100%;
-   z-index: 10;
-   //background-color: $whiteColor;
-   min-height: 230px;
+   background-color: $whiteColor;
+   padding: 50px;
 }
-.main {
+main {
    flex: 1 1 auto; // прижимаєм footer
    box-sizing: border-box;
-   //background-color: $disableGray;
+   background-color: $mainColor_2;
 }
 
 footer {
-   flex: 0 0 auto;
-   //background-color: $lightGray;
+   flex: 0 1 auto;
+   background-color: $mainColor_3;
 }
