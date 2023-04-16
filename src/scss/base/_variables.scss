@@ -4,17 +4,17 @@ $fontFamilyLogo: "BonVivant", sans-serife;
 $mainFontSize: rem(1); //розмір шрифта за замoвчуванням
 
 // ширина полотна
-$maxWidth: 1920;
+$maxWidth: 1926px;
 
 // мінімільний розмір сторінки
-$minWidth: 320;
+$minWidth: 320px;
 
 // ширина обмежуючого контейнера
-$maxWidthContainer: 1140px;
+$maxWidthContainer: 1170px;
 
 // загальний відступ у контейнера
 // (30 = по 15px зліва та зправа, 0 = немає відступа)
-$containerPadding: 30;
+$containerPadding: 30px;
 // ширина спрацювання першого брейкпщінта
 $containerWidth: $maxWidthContainer + $containerPadding;
 
@@ -31,16 +31,13 @@ $responsiveType: 2;
 
 //  основні кольори для використання
 $blackColor: #000000;
-$whiteColor: #ffffff;
-$titleColor: #8a9ac4;
-$redColor: #f80844;
-$titleColor1: #2a3041;
-$mainColor: rgb(23, 128, 162);
-$mainColor_1: rgb(54, 119, 143);
-$mainColor_2: rgb(85, 110, 125);
-$mainColor_3: rgb(116, 101, 107);
+$whiteColor: rgb(255, 255, 255);
+$mainColor: #f80844;
+$mainColor2: rgba(246, 61, 48, 0.937);
+$mainColorElement: rgb(32, 160, 206);
+$mainColorElement_1: rgb(54, 119, 143);
+$mainColorElement_2: rgb(85, 110, 125);
+$mainColorElement_3: rgb(116, 101, 107);
 
 //Primary color
-$primaryColor_default: $mainColor;
-
-//Gray color
+// $primaryColor_default: $mainColor;

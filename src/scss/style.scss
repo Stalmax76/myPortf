@@ -1,6 +1,6 @@
 //@use "sass: math";
 
-//підключення міксинів
+//підключення міксинів після змінних
 //@import "base/mixins";
 @import "base/variables.scss";
 @import "base/mixins.scss";
@@ -11,9 +11,10 @@
 
 //  підключення додаткових модулів
 //@import "fonts/icons.scss";
-@import "_header";
-@import "_main";
-@import "_common.scss";
+@import "blocks/title";
+@import "blocks/_main";
+@import "blocks/_header";
+@import "blocks/_sidepanel";
 
 // підключення шрифтів для використання &display=swap - при підключенні через плагін
 @import url(https://fonts.googleapis.com/css?family=Poppins:500,700,&display=swap);
@@ -28,13 +29,15 @@
 //================== настройки шаблону
 
 // стилі тега BODY =========================================================
-
+* {
+   margin: 0;
+   padding: 0;
+}
 html,
 body {
    font-family: $fontFamily;
-   background-color: #ffffff;
    font-weight: 400;
-   color: $blackColor;
+   color: $whiteColor;
    @include adaptive-font(14, 11);
 
    // скролл заблокований
@@ -52,12 +55,14 @@ body {
 // оболочка wrapper
 .wrapper {
    //background-color: rgb(238, 172, 172);
-   min-height: 100%;
+   height: 100%;
    display: flex;
    flex-direction: column;
    overflow: hidden;
    width: 100%;
    margin: 0 auto;
+   position: relative;
+   box-sizing: border-box;
 }
 
 //========================== настройки для контейнера ===============
@@ -70,17 +75,17 @@ body {
 // ======================================== blocks ===============================================
 header {
    flex: 0 1 auto;
-   width: 100%;
-   background-color: $whiteColor;
-   padding: 50px;
+   min-height: 100vh;
+   position: reletive;
+   background: no-repeat bottom/ cover url("@img/bg/1DM39594.jpeg");
+   padding-top: 205px;
 }
 main {
    flex: 1 1 auto; // прижимаєм footer
-   box-sizing: border-box;
-   background-color: $mainColor_2;
+   background-color: $mainColor;
 }
 
 footer {
    flex: 0 1 auto;
-   background-color: $mainColor_3;
+   background-color: $mainColorElement_3;
 }

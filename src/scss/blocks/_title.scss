@@ -1,0 +1,32 @@
+// переводимо:       font-size  - пікселі в реми     (формула переводу rem = (шрифт)px / базовий розмір шрифту(px))
+//                                                     (16 у браузерах у нас 14)
+// line-height: =  (line-height з шаблону ділим на розмір шрифту )
+// leter-spacing: = (привязуєм до шрифту - використовуємо  em(7.5, 12);
+
+.title {
+   // position: relative;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.6; /* 60/36 */
+
+   &__fz14 {
+      font-size: 14px;
+      line-height: 1.5; /* 21/14 */
+   }
+   &__fz16 {
+      font-size: 16px;
+      line-height: 1.5; /* 24/16 */
+   }
+   &__fz48 {
+      font-size: 48px;
+      line-height: 1.25; /* 60/48 */
+   }
+}
+.title a {
+   transition: all 0.3s ease 0s;
+   &:hover {
+      color: $mainColorElement;
+      font-weight: 700;
+      text-shadow: 1px 1px 0.5px #d8d3d3;
+   }
+}

@@ -1,0 +1,48 @@
+//================= ===========
+
+// переводимо:       font-size  - пікселі в реми     (формула переводу rem = (шрифт)px / базовий розмір шрифту(px)) (16 у браузерах у нас 14)
+// line-height: =  (line-height з шаблону ділим на розмір шрифту )
+// leter-spacing: = (привязуєм до шрифту - використовуємо  em(7.5, 12);
+
+//===================================================================================
+
+.title-block {
+   position: relative;
+   padding: 0 10px;
+}
+
+.main__title {
+   width: 400px;
+   margin-top: 10px;
+}
+
+.active-block {
+   margin-top: 25px;
+   display: flex;
+   align-items: center;
+   gap: 44px;
+}
+.button__link {
+   color: $mainColorElement;
+   height: 42px;
+   padding-top: 12px;
+   font-weight: 700;
+   text-shadow: 1px 1px 0.5px #d8d3d3;
+   transition: all 0.3s ease 0s;
+   &:hover {
+      color: $mainColorElement_3;
+      text-decoration: underline;
+   }
+}
+.button {
+   height: 42px;
+   padding: 12px 25px;
+   background-color: $mainColor;
+   border-radius: 15px;
+}
+.text-with-mixin {
+   position: relative;
+   padding-left: 10px;
+   z-index: 3;
+   @include before_circle;
+}

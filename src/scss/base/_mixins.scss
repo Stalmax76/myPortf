@@ -10,3 +10,17 @@
       font-size: calc(#{$mobileSmall + px} + #{$addSize} * (100vw / #{$maxWidth}));
    }
 }
+
+@mixin before_circle {
+   &::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: $mainColor;
+      z-index: -1;
+   }
+}

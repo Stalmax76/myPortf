@@ -1,0 +1,42 @@
+.sidepanel {
+   position: fixed;
+   top: 170px;
+   left: 50px;
+   height: 340px;
+   display: flex;
+   gap: 25px;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 3;
+   &__line {
+      width: 2px;
+      height: 70px;
+      background-color: $whiteColor;
+   }
+}
+.sidepanel__link {
+   width: 20px;
+   a {
+      display: block;
+   }
+   &:hover {
+      border: solid $mainColor;
+   }
+   img {
+      width: 100%;
+   }
+   &:first-child {
+      transform: rotate(-90deg);
+   }
+}
+
+.sidepanel__text {
+   height: 150px;
+   width: 25px;
+   span {
+      transform: rotate(-90deg) translate(-30%, -460%);
+      display: block;
+      width: 150px;
+   }
+}
