@@ -6,8 +6,8 @@
 @import "base/mixins.scss";
 
 // обнулення
-@import "_nullStyle";
-@import "_normalize";
+@import "base/_nullStyle";
+@import "base/_normalize";
 
 //  підключення додаткових модулів
 //@import "fonts/icons.scss";
@@ -15,13 +15,14 @@
 @import "blocks/_main";
 @import "blocks/_header";
 @import "blocks/_sidepanel";
+@import "blocks/menu";
 
 // підключення шрифтів для використання &display=swap - при підключенні через плагін
 @import url(https://fonts.googleapis.com/css?family=Poppins:500,700,&display=swap);
 
 // =======================================================================================
 // підключення локальних шрифтів
-@import "_fonts.scss";
+@import "fonts.scss";
 
 // підключення іконочного шрифту
 @import "fonts/icons.scss";

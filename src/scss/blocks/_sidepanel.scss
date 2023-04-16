@@ -16,18 +16,23 @@
    }
 }
 .sidepanel__link {
-   width: 20px;
    a {
       display: block;
    }
-   &:hover {
-      border: solid $mainColor;
-   }
-   img {
-      width: 100%;
+   svg {
+      width: 20px;
+      height: 20px;
+      path {
+         fill: $whiteColor;
+      }
    }
    &:first-child {
       transform: rotate(-90deg);
+   }
+   &:hover {
+      svg path {
+         fill: $mainColorElement_3;
+      }
    }
 }
 
