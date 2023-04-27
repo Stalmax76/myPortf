@@ -24,7 +24,7 @@
       position: relative;
       @include before_circle;
       z-index: 2;
-      padding-left: 12px;
+      padding-left: 20px;
       padding-top: 0px;
    }
 
@@ -58,7 +58,7 @@
          .about__skill-decor {
             position: relative;
             // top: px;
-            padding: 25px 0 0 15px;
+            padding: 25px 0 0 21px;
             @include before_circle;
             z-index: 2;
             &:before {

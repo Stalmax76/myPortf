@@ -42,7 +42,6 @@
 }
 .text-with-mixin {
    position: relative;
-   padding-left: 10px;
    z-index: 3;
    @include before_circle;
 }

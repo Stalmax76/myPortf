@@ -71,6 +71,13 @@ body {
    max-width: $maxWidthContainer;
    margin: 0 auto;
 }
+[class*="text"] {
+   text-indent: 1em;
+   p {
+      padding: 2px 0px;
+      text-indent: 1em;
+   }
+}
 
 //================divider ======================
 .divider {
