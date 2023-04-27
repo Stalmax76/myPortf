@@ -1,0 +1,104 @@
+.resume {
+   padding-top: 120px;
+   &__container {
+   }
+   &__title {
+      position: relative;
+      text-align: center;
+      z-index: 3;
+      @include before_circle;
+      &::before {
+         top: -6px;
+         left: 50%;
+         transform: translateX(-50%);
+      }
+   }
+
+   &__subtitle {
+      text-align: center;
+   }
+   &__body {
+      padding: 60px 67px 0 67px;
+      display: grid;
+      grid-template-columns: repeat(2, 433px);
+      column-gap: 138px;
+   }
+   &__column {
+      ul {
+         list-style-type: none;
+         li {
+            display: block;
+            position: relative;
+            &::after {
+               content: "";
+               width: 2px;
+               height: calc(100% + 8px);
+               position: absolute;
+               top: -8px;
+               left: 0;
+               background-color: $mainColorElement_3;
+            }
+         }
+      }
+      .resume__body-title {
+         position: relative;
+         padding-left: 35px;
+         &:before {
+            content: "";
+            top: 50%;
+            left: -7px;
+            transform: translateY(-50%);
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: $mainColor;
+            border-radius: 100%;
+         }
+      }
+   }
+
+   &__item {
+      position: relative;
+      &::before {
+         position: absolute;
+         content: "";
+         top: 70px;
+         height: 2px;
+         width: 42px;
+         background-color: $mainColorElement_3;
+      }
+      &-head {
+         position: relative;
+         padding: 45px 0px 0px 100px;
+      }
+      &-footer {
+         padding-left: 43px;
+         margin-top: 12px;
+      }
+      &-icon {
+         position: absolute;
+         top: 60px;
+         left: 36px;
+         @include before_circle;
+         z-index: 2;
+         img {
+            position: absolute;
+            top: 8px;
+            left: 25px;
+         }
+      }
+   }
+   &__item-location {
+      font-size: 12px;
+      line-height: 1.5; /* 18/12 */
+      margin-top: 5px;
+   }
+   &__item-title {
+      margin-top: 3px;
+   }
+   &__item-footer {
+      font-size: 12px;
+      line-height: 1.5; /* 18/12 */
+      text-indent: 1em;
+   }
+}
