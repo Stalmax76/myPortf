@@ -11,13 +11,14 @@
 
 //  підключення додаткових модулів
 //@import "fonts/icons.scss";
-@import "blocks/title";
+@import "blocks/_title";
 @import "blocks/_main";
 @import "blocks/_header";
 @import "blocks/_sidepanel";
-@import "blocks/menu";
+@import "blocks/_menu";
 @import "blocks/_about";
-@import "blocks/resume";
+@import "blocks/_resume";
+@import "blocks/_skills";
 @import "blocks/footer";
 
 // підключення шрифтів для використання &display=swap - при підключенні через плагін
