@@ -1,22 +1,20 @@
 .resume {
    padding-top: 120px;
-   &__container {
-   }
-   &__title {
-      position: relative;
-      text-align: center;
-      z-index: 3;
-      @include before_circle;
-      &::before {
-         top: -6px;
-         left: 50%;
-         transform: translateX(-50%);
-      }
-   }
+   // &__title {
+   //    position: relative;
+   //    text-align: center;
+   //    z-index: 3;
+   //    @include before_circle;
+   //    &::before {
+   //       top: -6px;
+   //       left: 50%;
+   //       transform: translateX(-50%);
+   //    }
+   // }
 
-   &__subtitle {
-      text-align: center;
-   }
+   // &__subtitle {
+   //    text-align: center;
+   // }
    &__body {
       padding: 60px 67px 0 67px;
       display: grid;

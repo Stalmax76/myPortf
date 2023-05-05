@@ -15,7 +15,6 @@ close.addEventListener("click", () => {
 //================== progress bar ==========
 const counters = document.querySelectorAll(".level-value"),
   lines = document.querySelectorAll(".skills-progress__bar span");
-console.log(counters);
 counters.forEach((item, i) => {
   lines[i].style.width = item.innerHTML;
 });

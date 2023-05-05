@@ -12,7 +12,6 @@
 //  підключення додаткових модулів
 //@import "fonts/icons.scss";
 @import "blocks/_title";
-@import "blocks/_main";
 @import "blocks/_header";
 @import "blocks/_sidepanel";
 @import "blocks/_menu";
@@ -20,6 +19,7 @@
 @import "blocks/_resume";
 @import "blocks/_skills";
 @import "blocks/footer";
+@import "blocks/_portfolio";
 
 // підключення шрифтів для використання &display=swap - при підключенні через плагін
 @import url(https://fonts.googleapis.com/css?family=Poppins:500,700,&display=swap);
