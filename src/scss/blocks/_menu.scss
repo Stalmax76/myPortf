@@ -15,8 +15,7 @@
    }
    &__block {
       position: relative;
-      // left: -100%;
-      width: 345px;
+      width: 345px; /* 345/1800 */
       background-color: $mainColor;
       height: 100%;
       padding-top: 140px;
@@ -108,15 +107,6 @@
       opacity: 0.3;
    }
 }
-
-// .menu__social-link {
-// }
-// .link__github {
-// }
-// .link__instagram {
-// }
-// .link__facebook {
-// }
 
 //===================== hamburger =============================
 .hamburger {

@@ -1,0 +1,234 @@
+// variebls
+// брейк-поінти
+$pc: em($containerWidth); //ПК, ноутбук, деякі планшети в горизонтальному положенні
+$tablet: em(991.98); //Планшети, деякі телефони в горизонтальному положенні
+$mobile: em(767.98); //телефони L
+$mobileSmall: em(479.98); //телефони S
+
+@media (min-width: 1399.98px) {
+   .about {
+      padding-top: 120px;
+      &__wrapper {
+         grid-template-columns: 35% 55%;
+         column-gap: 40px;
+         row-gap: 30px;
+      }
+      &__photo {
+         img {
+            height: 100%;
+         }
+      }
+
+      &__skill-item {
+         column-gap: 15px;
+         .about__skill-text p {
+            font-size: 11px;
+         }
+      }
+      .title__fz14 {
+         font-size: 13px;
+      }
+   }
+}
+
+@media (max-width: 1399.98px) {
+   .about {
+      padding-top: 80px;
+      &__wrapper {
+         grid-template-columns: 40% 55%;
+         grid-template-rows: repeate(2, minmax(246px, auto));
+         grid-auto-rows: minmax(10%, auto);
+         column-gap: 5%;
+         row-gap: 5%;
+      }
+      &__photo {
+         grid-column: 1/2;
+         grid-row: 1/2;
+      }
+      &__descr {
+         grid-row: 1 / 2;
+         grid-column: 2 /3;
+      }
+      &__text {
+         margin-top: 10px;
+         font-size: 13px;
+      }
+      &__skills {
+         grid-column: 1 / 3;
+         grid-row: 2 / 3;
+         display: grid;
+         grid-template: repeat(2, auto) / repeat(3, 1fr);
+         grid-auto-rows: auto;
+         row-gap: 5%;
+         column-gap: 5%;
+         .about__skill-item {
+            column-gap: 15px;
+         }
+      }
+   }
+}
+
+@media (max-width: 1199.98px) {
+   .about {
+      padding-top: 60px;
+      &__wrapper {
+         display: grid;
+         grid-template-columns: 40% 55%;
+         grid-template-rows: repeate(2, auto);
+         grid-auto-rows: minmax(10%, auto);
+      }
+      &__photo {
+         img {
+            height: 110%;
+         }
+      }
+
+      &__text {
+         margin-top: 10px;
+         font-size: 11px;
+         line-height: 1.3;
+      }
+      &__skills {
+         margin-top: 15px;
+         grid-template: repeat(2, auto) / repeat(2, 1fr);
+      }
+   }
+}
+@media (max-width: 991.98px) {
+   .about {
+      padding-top: 30px;
+      &__wrapper {
+         display: grid;
+         grid-template-columns: 35% 60%;
+         grid-template-rows: repeate(2, auto);
+         grid-auto-rows: minmax(10%, auto);
+      }
+      &__photo {
+         img {
+            height: 100%;
+         }
+      }
+      &__skills {
+         margin-top: 5px;
+         grid-template: repeat(3, auto) / repeat(1, 1fr);
+         row-gap: 20px;
+      }
+      .about__skill-item {
+         grid-template-columns: 14% 86%;
+         column-gap: 0;
+      }
+   }
+
+   .header {
+      padding-top: 190px;
+   }
+   .title__fz36 {
+      margin-top: 10px;
+      font-size: 28px;
+   }
+}
+@media (max-width: 767.98px) {
+   .about {
+      padding-top: 10px;
+      &__wrapper {
+         grid-template-columns: 10% 40% 40%;
+         grid-template-rows: repeate(3, auto);
+         row-gap: 10px;
+         align-items: center;
+      }
+      &__photo {
+         grid-row: 2 / 3;
+         grid-column: 2 / 3;
+         img {
+            width: 188px;
+         }
+      }
+      &__descr {
+         grid-row: 1 / 2;
+         grid-column: 2 / 4;
+      }
+      &__skills {
+         grid-row: 3 / 4;
+         grid-column: 1 / 4;
+      }
+   }
+   .sidepanel {
+      display: none;
+   }
+}
+@media (max-width: 576px) {
+   [class*="__container"] {
+      max-width: 100%;
+   }
+   .header {
+      padding-top: 160px;
+   }
+   .hamburger {
+      right: 20px;
+   }
+   .menu {
+      &__block {
+         width: 250px;
+      }
+      &__list {
+         padding-left: 20px;
+      }
+   }
+
+   .active-block {
+      margin-top: 52px;
+      justify-content: center;
+      align-items: center;
+   }
+}
+@media (max-width: 479.98px) {
+   .about {
+      &__wrapper {
+         display: flex;
+         flex-direction: column;
+      }
+      &__descr {
+         order: 1;
+      }
+      &__photo {
+         order: 2;
+      }
+      &__skills {
+         order: 3;
+      }
+      .about__skill-item {
+         grid-template-columns: 22% 75%;
+      }
+      .header {
+         padding-top: 130px;
+      }
+      .title-block {
+         text-align: left;
+
+         .title__fz48 {
+            font-size: 36px;
+         }
+
+         .title__fz16 {
+            font-size: 16px;
+         }
+         .main__title {
+            padding-top: 20px;
+            width: 90%;
+         }
+         .text-with-mixin {
+            &:before {
+               width: 28px;
+               height: 28px;
+               top: -2px;
+               left: 7px;
+            }
+         }
+      }
+      .active-block {
+         margin-top: 42px;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+}
