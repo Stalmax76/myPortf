@@ -1,21 +1,21 @@
 .skills {
    padding-top: 120px;
    &__container {
-      min-width: 1306px;
+      min-width: 90%;
       margin: 0 auto;
    }
 
    &__card-block {
       padding-top: 60px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      justify-content: start;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(270px, 310px));
+      grid-template-rows: repeat(2, 270px);
+      grid-auto-rows: 270px;
+      gap: 10px;
    }
    &__item {
       padding: 30px 33px 25px;
-      width: 23%;
-      height: 270px;
+
       border: 1px solid $mainColorElement_3;
       align-content: left;
       background-color: $mainColorElement_3;

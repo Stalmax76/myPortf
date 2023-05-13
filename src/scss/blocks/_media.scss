@@ -6,6 +6,12 @@ $mobile: em(767.98); //телефони L
 $mobileSmall: em(479.98); //телефони S
 
 @media (min-width: 1399.98px) {
+   .resume {
+      &__body {
+         padding: 8% 4% 0% 4%;
+      }
+   }
+
    .about {
       padding-top: 120px;
       &__wrapper {
@@ -32,8 +38,23 @@ $mobileSmall: em(479.98); //телефони S
 }
 
 @media (max-width: 1399.98px) {
+   .skills {
+      padding-top: 80px;
+      .skills__container {
+         min-width: 82%;
+      }
+
+      &__card-block {
+         padding-top: 30px;
+         grid-template-columns: repeat(3, minmax(270px, 310px));
+      }
+   }
+   .resume {
+      padding-top: 80px;
+   }
    .about {
       padding-top: 80px;
+      padding-bottom: 0px;
       &__wrapper {
          grid-template-columns: 40% 55%;
          grid-template-rows: repeate(2, minmax(246px, auto));
@@ -69,6 +90,29 @@ $mobileSmall: em(479.98); //телефони S
 }
 
 @media (max-width: 1199.98px) {
+   .resume {
+      padding-top: 80px;
+      &__body {
+         padding: 20px 4% 0 4%;
+         column-gap: 88px;
+      }
+      &__item {
+         &::before {
+            position: absolute;
+            content: "";
+            top: 27px;
+            height: 2px;
+            width: 42px;
+            background-color: $mainColorElement_3;
+         }
+         &-head {
+            padding-top: 15px;
+         }
+         &-icon {
+            top: 18px;
+         }
+      }
+   }
    .about {
       padding-top: 60px;
       &__wrapper {
@@ -95,6 +139,32 @@ $mobileSmall: em(479.98); //телефони S
    }
 }
 @media (max-width: 991.98px) {
+   .skills {
+      padding-top: 80px;
+      .skills__container {
+         min-width: 70%;
+      }
+
+      &__card-block {
+         grid-template-columns: repeat(2, minmax(270px, 310px));
+         justify-content: center;
+      }
+      &__progress-block {
+         padding-top: 80px;
+      }
+      .skills-progress__list {
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(3, 1fr);
+         grid-auto-rows: 70px;
+      }
+   }
+   .resume {
+      padding-top: 80px;
+      &__body {
+         padding: 20px 2% 0 2%;
+         column-gap: 60px;
+      }
+   }
    .about {
       padding-top: 30px;
       &__wrapper {
@@ -114,7 +184,7 @@ $mobileSmall: em(479.98); //телефони S
          row-gap: 20px;
       }
       .about__skill-item {
-         grid-template-columns: 14% 86%;
+         grid-template-columns: auto 83%;
          column-gap: 0;
       }
    }
@@ -127,7 +197,55 @@ $mobileSmall: em(479.98); //телефони S
       font-size: 28px;
    }
 }
+@media (max-width: 880px) {
+   .resume {
+      &__body {
+         grid-template-columns: auto;
+         padding-left: 4%;
+         row-gap: 50px;
+      }
+      &__item {
+         padding-bottom: 10px;
+      }
+   }
+}
 @media (max-width: 767.98px) {
+   .skills {
+      &__card-block {
+         grid-template-columns: repeat(1, minmax(270px, 310px));
+         justify-content: center;
+      }
+      &__item {
+         width: minmax(270px, 310px);
+      }
+      &__progress-block {
+         padding-top: 60px;
+         width: 90%;
+         margin: 0 auto;
+      }
+      .skills-progress__list {
+         grid-template-columns: repeat(1, auto);
+         grid-template-rows: repeat(3, 1fr);
+         grid-auto-rows: 70px;
+         justify-content: stretch;
+      }
+   }
+   .resume {
+      &__body {
+         padding: 0;
+      }
+      &__item {
+         &::before {
+            width: 25px;
+         }
+         &-icon {
+            left: 18px;
+         }
+         &-head {
+            padding-left: 85px;
+         }
+      }
+   }
    .about {
       padding-top: 10px;
       &__wrapper {
@@ -197,7 +315,7 @@ $mobileSmall: em(479.98); //телефони S
          order: 3;
       }
       .about__skill-item {
-         grid-template-columns: 22% 75%;
+         grid-template-columns: auto 80%;
       }
       .header {
          padding-top: 130px;

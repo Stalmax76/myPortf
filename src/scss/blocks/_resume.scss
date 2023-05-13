@@ -2,9 +2,9 @@
    padding-top: 120px;
 
    &__body {
-      padding: 60px 67px 0 67px;
+      padding: 60px 8% 0 8%;
       display: grid;
-      grid-template-columns: repeat(2, 433px);
+      grid-template-columns: repeat(2, 1fr);
       column-gap: 138px;
    }
    &__column {
