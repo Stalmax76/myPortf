@@ -6,21 +6,22 @@
 }
 .block-price {
    display: grid;
-   grid-template-columns: repeat(2, 385px);
-   grid-template-rows: repeat(3, minmax(45px, auto));
-   grid-auto-rows: minmax(45px, auto);
+   grid-template-columns: repeat(auto-fit, 390px);
+   grid-template-rows: repeat(3, auto);
+   grid-auto-rows: auto;
    justify-content: space-between;
    row-gap: 15px;
 }
 .block-price__item {
-   height: 54px;
+   // height: 55px;
    max-width: 390px;
    background-color: $mainColorElement_1;
 }
 .item-price {
    display: grid;
    grid-template-columns: repeate(2, auto);
-   grid-row: repeate(2, minmax(22px, auto));
+   grid-row: repeate(2, auto);
+   grid-auto-rows: auto;
    row-gap: 5px;
    justify-content: space-between;
    align-content: space-between;

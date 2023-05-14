@@ -38,6 +38,21 @@ $mobileSmall: em(479.98); //телефони S
 }
 
 @media (max-width: 1399.98px) {
+   .contacts {
+      padding-top: 80px;
+   }
+   .price {
+      padding-top: 80px;
+      .price__container {
+         min-width: 75%;
+      }
+   }
+   .portfolio {
+      padding-top: 80px;
+      .portfolio__container {
+         min-width: 82%;
+      }
+   }
    .skills {
       padding-top: 80px;
       .skills__container {
@@ -58,7 +73,7 @@ $mobileSmall: em(479.98); //телефони S
       &__wrapper {
          grid-template-columns: 40% 55%;
          grid-template-rows: repeate(2, minmax(246px, auto));
-         grid-auto-rows: minmax(10%, auto);
+         grid-auto-rows: minmax(246px, auto);
          column-gap: 5%;
          row-gap: 5%;
       }
@@ -90,10 +105,39 @@ $mobileSmall: em(479.98); //телефони S
 }
 
 @media (max-width: 1199.98px) {
+   .contacts {
+      &__photo {
+         img {
+            height: 88%;
+         }
+      }
+      &__trigers {
+         margin-top: 0;
+         grid-template-columns: 1fr;
+         grid-template-rows: auto;
+         grid-auto-rows: auto;
+         row-gap: 10px;
+         .contacts__policy {
+            grid-row: 1 / 2;
+            text-align: left;
+         }
+      }
+   }
+   .price {
+      &__block {
+         margin-top: 30px;
+      }
+      .block-price {
+         grid-template-columns: minmax(auto, 385px);
+         grid-template-rows: repeat(6, minmax(65px, auto));
+         grid-auto-rows: minmax(65px, auto);
+         justify-content: center;
+      }
+   }
    .resume {
       padding-top: 80px;
       &__body {
-         padding: 20px 4% 0 4%;
+         padding: 30px 4% 0 4%;
          column-gap: 88px;
       }
       &__item {
@@ -139,6 +183,53 @@ $mobileSmall: em(479.98); //телефони S
    }
 }
 @media (max-width: 991.98px) {
+   .contacts {
+      &__wrapper {
+         justify-content: space-between;
+         grid-template-columns: 30% 65%;
+         grid-auto-rows: auto;
+      }
+      &__photo {
+         grid-column: 1 / 2;
+         grid-row: 1 / 2;
+         img {
+            height: 200px;
+         }
+      }
+      &__content {
+         grid-column: 1 / 3;
+         grid-row: 1 / 3;
+         display: grid;
+         grid-template-columns: 30% 64%;
+         grid-template-rows: repeat(auto-fit, 3);
+         gap: 30px;
+         &-header {
+            grid-column: 2 / 3;
+         }
+         .contacts__form {
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+         }
+      }
+   }
+   .portfolio {
+      .portfolio__container {
+         min-width: 70%;
+      }
+      &__works {
+         margin-top: 30px;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(3, 200px);
+      }
+      .vertical {
+         grid-column: 1 / 2;
+         grid-row: 3 / 4;
+      }
+      .horizontal {
+         grid-column: 2 / 3;
+         grid-row: 3 / 4;
+      }
+   }
    .skills {
       padding-top: 80px;
       .skills__container {
@@ -161,7 +252,7 @@ $mobileSmall: em(479.98); //телефони S
    .resume {
       padding-top: 80px;
       &__body {
-         padding: 20px 2% 0 2%;
+         padding: 30px 2% 0 2%;
          column-gap: 60px;
       }
    }
@@ -180,7 +271,7 @@ $mobileSmall: em(479.98); //телефони S
       }
       &__skills {
          margin-top: 5px;
-         grid-template: repeat(3, auto) / repeat(1, 1fr);
+         grid-template: repeat(3, auto) / 1fr;
          row-gap: 20px;
       }
       .about__skill-item {
@@ -200,7 +291,7 @@ $mobileSmall: em(479.98); //телефони S
 @media (max-width: 880px) {
    .resume {
       &__body {
-         grid-template-columns: auto;
+         grid-template-columns: 1fr;
          padding-left: 4%;
          row-gap: 50px;
       }
@@ -210,9 +301,52 @@ $mobileSmall: em(479.98); //телефони S
    }
 }
 @media (max-width: 767.98px) {
+   .contacts {
+      padding-top: 40px;
+      &__wrapper {
+         display: block;
+      }
+      &__photo {
+         display: none;
+      }
+      &__content {
+         display: grid;
+         grid-template-columns: 90%;
+         grid-template-rows: auto;
+         column-gap: 0;
+         // justify-content: center;
+
+         // grid-template-rows: repeat(auto-fit, 3);
+         // gap: 30px;
+         &-header {
+            grid-column: auto;
+         }
+         .contacts__form {
+            // grid-column: 1 / 3;
+            // grid-row: 2 / 3;
+         }
+      }
+   }
+   .portfolio {
+      &__works {
+         grid-template-columns: minmax(270px, 310px);
+         grid-template-rows: repeat(6, minmax(270px, 310px));
+         grid-auto-rows: minmax(270px, 310px);
+         justify-content: center;
+         gap: 20px;
+      }
+      .vertical {
+         grid-column: 1 / 2;
+         grid-row: 4 / 5;
+      }
+      .horizontal {
+         grid-column: auto;
+         grid-row: 6 / 7;
+      }
+   }
    .skills {
       &__card-block {
-         grid-template-columns: repeat(1, minmax(270px, 310px));
+         grid-template-columns: minmax(270px, 310px);
          justify-content: center;
       }
       &__item {
@@ -224,7 +358,7 @@ $mobileSmall: em(479.98); //телефони S
          margin: 0 auto;
       }
       .skills-progress__list {
-         grid-template-columns: repeat(1, auto);
+         grid-template-columns: 1fr;
          grid-template-rows: repeat(3, 1fr);
          grid-auto-rows: 70px;
          justify-content: stretch;
@@ -232,7 +366,7 @@ $mobileSmall: em(479.98); //телефони S
    }
    .resume {
       &__body {
-         padding: 0;
+         padding: 20px 0 0 0;
       }
       &__item {
          &::before {
@@ -258,7 +392,7 @@ $mobileSmall: em(479.98); //телефони S
          grid-row: 2 / 3;
          grid-column: 2 / 3;
          img {
-            width: 188px;
+            width: 231px;
          }
       }
       &__descr {
@@ -274,9 +408,14 @@ $mobileSmall: em(479.98); //телефони S
       display: none;
    }
 }
-@media (max-width: 576px) {
+@media (max-width: 577px) {
    [class*="__container"] {
       max-width: 100%;
+   }
+   .price {
+      .block-price {
+         padding: 0 15px;
+      }
    }
    .header {
       padding-top: 160px;
